@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 # Path to the file
 file_path = "/var/lib/words/dict"
 file_path = "./README.md"
+file_path = 'dictionary_histogram/small_test'
 
 # Initialize counter
 letters_counts = {}
@@ -22,5 +23,5 @@ plt.bar(letters_counts.keys(), letters_counts.values())
 plt.xlabel("Letter")
 plt.ylabel("Occurances")
 plt.title(file_path + " Histogram")
-plt.savefig('histogram.png')
+plt.savefig('dictionary_histogram/histogram.png')
 #plt.show()
